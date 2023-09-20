@@ -2,14 +2,20 @@ import CardGenerator from './CardGenerator'
 export default function CoffeeList({ coffee }) {
 	return (
 		<div>
-			<h3>Coffee list</h3>
-			{coffee.map((item) => (
-				<CardGenerator
-					title={item.title}
-					desc={item.description}
-					ingr={item.ingredients}
-				/>
-			))}
+		
+			<div className='container justify-content-center'>
+				<div className='row align-item-center '>
+					{coffee.map((item) => (
+						<CardGenerator
+							key={item.id}
+							title={item.title}
+							image={item.image}
+							desc={item.description}
+							ingr={item.ingredients}
+						/>
+					))}
+				</div>
+			</div>
 		</div>
 	)
 }

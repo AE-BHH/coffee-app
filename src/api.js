@@ -1,5 +1,5 @@
-function getCoffeeData() {
-	return fetch(`https://api.sampleapis.com/coffee/hot`)
+function getCoffeeData(type) {
+	return fetch(`https://api.sampleapis.com/coffee/${type ? "hot" : "iced"}`)
 		.then((res) => res.json())
 		.then((res) => {
 			return res

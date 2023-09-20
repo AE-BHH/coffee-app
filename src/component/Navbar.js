@@ -38,7 +38,7 @@ export default function Navbar({ type, setType }) {
 							marginRight: '100px',
 						}}
 						onClick={(e) => setType(type ? false : true)}>
-						{type ? <h3>ICED</h3> : <h3>HOT</h3>}
+						{type ? <h3>SEE ICED</h3> : <h3>SEE HOT</h3>}
 					</button>
 				</div>
 			</nav>
